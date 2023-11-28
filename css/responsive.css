@@ -9,7 +9,7 @@
 @media screen and (max-width: 1103px) {
     #wrapper {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column-reverse;
