@@ -30,6 +30,7 @@ a {
 }
 #wrapper {
 	display: flex;
+	justify-content: space-between;
 }
 #wrapper img {
 	margin: 70px;
