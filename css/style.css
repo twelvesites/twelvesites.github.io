@@ -9,6 +9,49 @@ html {
 a {
 	text-decoration: none;
 }
+#navbar {
+    background-color: #d4c9bb8c; /* White with some transparency */
+    backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+    box-shadow: 0 4px 8px rgba(224, 138, 138, 0.199); /* Optional: for a subtle shadow */
+    width: 100%;
+    height: 70px;
+    position: fixed;
+	display: none; /* Initially hidden */
+    top: 0; 
+    z-index: 1;
+	transition: top 0.3s ease-out;
+}
+/* The 'show' class will animate the navbar into view */
+#navbar.show {
+    top: 0; /* Move the nav into view */
+	display: block;
+}
+
+/* Optional: If you want to use keyframes for a more customized animation */
+@keyframes slideDown {
+    from {
+        top: -60px; /* Match the value used in the initial state */
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* Apply animation when the 'show' class is added */
+#navbar.show {
+    animation: slideDown 0.3s ease-out; /* Adjust duration and easing as needed */
+}
+.logo {
+    width: 120px;
+    margin-top: -55px;
+    
+}
+.logo-nav {
+    width: 150px;
+    
+}
 .logo-twelve {
 	opacity: 70%;
 	margin-top: -90px;

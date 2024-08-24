@@ -15,6 +15,11 @@
       <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 </head>
 <body>
+      <nav id="navbar">
+            <center>
+                <img src="images/logo.png" alt="twelve" class="logo-nav">
+            </center>
+        </nav>
      
       <section id="content">
             <div id="content1">
@@ -194,5 +199,26 @@
         slideshowIndex = Array.from(document.querySelectorAll('.image')).indexOf(event.target);
         document.querySelector('.gallery-container').scrollTo({ left: slideshowIndex * window.innerWidth, behavior: 'smooth' });
       }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.getElementById('navbar');
+    const content1 = document.getElementById('content1');
+
+    function onScroll() {
+        const content1Height = content1.offsetTop + content1.offsetHeight;
+        const scrollY = window.scrollY || window.pageYOffset;
+
+        if (scrollY > content1Height) {
+            navbar.classList.add('show');
+        } else {
+            navbar.classList.remove('show');
+        }
+    }
+
+    window.addEventListener('scroll', onScroll);
+});
+
+
     </script>
 </html>
