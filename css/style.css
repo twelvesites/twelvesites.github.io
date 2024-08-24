@@ -9,7 +9,10 @@ html {
 a {
 	text-decoration: none;
 }
-
+.logo-twelve {
+	opacity: 70%;
+	margin-top: -90px;
+}
 .sidebar-text {
 	writing-mode: horizontal-tb; /* Horizontal text */
 	transform: rotate(270deg); /* No rotation */
