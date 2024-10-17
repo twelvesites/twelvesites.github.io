@@ -10,9 +10,9 @@ a {
 	text-decoration: none;
 }
 #navbar {
-    background-color: #d4c9bb8c; /* White with some transparency */
-    backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
-    box-shadow: 0 4px 8px rgba(224, 138, 138, 0.199); /* Optional: for a subtle shadow */
+    background-color: #d4c9bbe5; /* White with some transparency */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    box-shadow: 0 4px 8px rgba(15, 14, 14, 0.199); /* Optional: for a subtle shadow */
     width: 100%;
     height: 70px;
     position: fixed;
@@ -20,6 +20,7 @@ a {
     top: 0; 
     z-index: 1;
 	transition: top 0.3s ease-out;
+	border-radius: 0 0 30px 30px;
 }
 /* The 'show' class will animate the navbar into view */
 #navbar.show {
